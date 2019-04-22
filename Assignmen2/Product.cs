@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Assignment2
+namespace Assignmen2
 {
-    class Product
+    public class Product
     {
-        int id;
         string name;
+        int id;
         float price;
         int qty;
         string image;
@@ -16,6 +16,10 @@ namespace Assignment2
         public Product()
         {
 
+        }
+        public float GetPrice()
+        {
+            return price;
         }
         public Product(int id, string name, float price, int qty, string image, string desc, List<string> list)
         {
@@ -40,16 +44,9 @@ namespace Assignment2
             Console.WriteLine("Image: " + image);
             Console.WriteLine("Description: " + desc);
         }
-        public void GetQty()
+        public int GetQty()
         {
-            if (this.qty > 0)
-            {
-                Console.WriteLine("In Stock: " + qty);
-            }
-            else
-            {
-                Console.WriteLine("Out of stock");
-            }
+            return qty;
         }
         public void AddToGallery(string img)
         {
@@ -69,15 +66,5 @@ namespace Assignment2
             gallery.RemoveAt(i);
         }
 
-    }
-    class MainClass
-    {
-        public static void Main(string[] args)
-        {
-            List<string> list = new List<string>();
-            list.Add("item1");
-            Product product = new Product(1, "IphoneX", (float)5.5, 5, "image1", "hot", list);
-            product.getInfo();
-        }
     }
 }
