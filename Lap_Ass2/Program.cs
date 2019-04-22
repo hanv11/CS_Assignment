@@ -41,7 +41,7 @@ namespace Lap_Ass2
             Console.WriteLine("Image: " + image);
             Console.WriteLine("Description: " + desc);
         }
-        public void GetQty()
+        public void GetQtyInfo()
         {
             if (this.qty > 0)
             {
