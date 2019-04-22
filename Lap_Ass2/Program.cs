@@ -1,8 +1,8 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace Lap_Ass2
 {
-    class Product
+     class Product
     {
         string name;
         int id;
