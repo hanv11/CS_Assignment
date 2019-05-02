@@ -4,16 +4,78 @@ namespace Assignment4
     public class News : INews
     {
 
-        public int id;
-        public string title;
-        public string publishDate;
-        public string author;
-        public string content;
-        public float averageRate;
+        private int id;
+        private string title;
+        private string publishDate;
+        private string author;
+        private string content;
+        private float averageRate;
 
         public int[] rateList = new int[3];
 
-
+        public int ID
+        {
+            get
+            {
+                return id;
+            }
+            set
+            {
+                this.id = value;
+            }
+        }
+        public string Title
+        {
+            get
+            {
+                return title;
+            }
+            set
+            {
+                this.title = value;
+            }
+        }
+        public string PublishDate
+        {
+            get
+            {
+                return publishDate;
+            }
+            set
+            {
+                this.publishDate = value;
+            }
+        }
+        public string Author
+        {
+            get
+            {
+                return author;
+            }
+            set
+            {
+                this.author = value;
+            }
+        }
+        public string Content
+        {
+            get
+            {
+                return content;
+            }
+            set
+            {
+                this.content = value;
+            }
+        }
+        public float AverageRate
+        {
+            get
+            {
+                return averageRate;
+            }
+       
+        }
         public News()
         {
         }

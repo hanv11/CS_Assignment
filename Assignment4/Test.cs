@@ -26,7 +26,7 @@ namespace Assignment4
                     ShowMenu();
                     break;
                 case "2":
-                    ViewNewsList();
+                    ViewNewsList(newsList);
                     ShowMenu();
                     break;
                 case "3":
@@ -64,7 +64,7 @@ namespace Assignment4
             newsList.Add(news);
 
         }
-        public static void ViewNewsList()
+        public static void ViewNewsList(List<News> newsList)
         {
             foreach(News news in newsList)
             {
