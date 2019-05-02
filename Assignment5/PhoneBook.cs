@@ -65,7 +65,7 @@ namespace Assignment5
                         Console.WriteLine(i+1 + " "  + dp.Phone[i]);
                     }
                     int index = Convert.ToInt16(Console.ReadLine());
-                    dp.Phone[index] = newPhone;
+                    dp.Phone[index-1] = newPhone;
                     break;
                 }
             }
